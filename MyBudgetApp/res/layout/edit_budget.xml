@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/view_title_text"
+        android:textSize="@dimen/title_text_size"
+        tools:context=".MainActivity" />
+
+    <TextView
+        android:id="@+id/amount_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="71dp"
+        android:text="@string/amount" />
+
+    <EditText
+        android:id="@+id/budget_amount_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/amount_text_view"
+        android:layout_toRightOf="@id/amount_text_view"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/submitChangesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/amount_text_view"
+        android:layout_marginTop="26dp"
+        android:text="@string/submit_changes" />
+
+    <Button
+        android:id="@+id/clearBudgetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/submitChangesButton"
+        android:layout_marginTop="16dp"
+        android:text="@string/clear_budget" />
+
+    <Button
+        android:id="@+id/deleteTransactionsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/clearBudgetButton"
+        android:layout_marginTop="22dp"
+        android:text="@string/delete_transaction" />
+
+    <Button
+        android:id="@+id/deleteCategoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/deleteTransactionsButton"
+        android:layout_marginTop="15dp"
+        android:text="@string/delete_category" />
+
+</RelativeLayout>

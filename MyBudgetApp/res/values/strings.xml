@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="app_name">MyBudgetApp</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MyBudgetApp</string>
+    <string-array name="navList">Home, Add Expense, Add Deposit, History, Help</string-array>
+    <string name="home">Home</string>
+    <string name="editBudget">Edit Budget</string>
+    <string name="history">History</string>
+    <string name="transaction">Add Transaction</string>
+    <string name="deposit">Add Deposit</string>
+    <string name="totalExpenseString">Total Expense:  </string>
+    <string name="totalBudgetString">"Budget Total:  "</string>
+    <string name="addTransactionButtonString">Add Transaction</string>
+    <string name="addDepositButtonString">Add Deposit</string>
+    <string name="budgetLeftString">"Total Budget Left:  "</string>
+    <string name="budgetSpentString">"Budget Spent:  "</string>
+    <string name="percentLeftString">"Percent of Budget Left:  "</string>
+     <string name="view_title_text">Edit Budget</string>
+    <string name="amount">Budget Amount</string>
+    <string name="submit_changes">Submit Changes</string>
+    <string name="clear_budget">Clear Budget</string>
+    <string name="increase_budget">Increase Budget</string>
+    <string name="stuff">Stuff</string>
+    <string name="welcomeString">Welcome to My Budget APP</string>
+    <string name="setBudget">Set Budget Amount</string>
+    <string name="welcomeMessageString">below are some pre created catagories add or delete as many as you wish add a category by typing in the box below and clicking add click done when finished.</string>
+    <string name="addTransactionString">Add New Transaction</string>
+    <string name="recipient">Recipient: </string>
+    <string name="itemServiceString">Item or Service: </string>
+    <string name="paymentAmount">Payment Amount:</string>
+    <string name="addTransaction">Add Transaction</string>
+    <string name="datePaid">Date Paid:</string>
+    <string name="dateReceived">Date Received: </string>
+    <string name="amountReceived">Amount Received: </string>
+    <string name="addDeposit">Add Deposit</string>
+    <string name="sourceOfIncome">Source of Income:</string>
+    <string name="addCategory">Add Category</string>
+    <string name="add">Add</string>
+    <string name="deleteText">Delete</string>
+    <string name="deleteCategory">delCat</string>
+    <string name="delete_transaction">Delete Transactions</string>
+    <string name="delete_category">Delete Catagory</string>
+    <string name="nameText">Name</string>
+    <string name="amountText">Amount</string>
+    <string name="dateText">Date</string>
+
+</resources>
