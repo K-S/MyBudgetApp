@@ -18,3 +18,13 @@ local.properties
 # Eclipse project files
 .classpath
 .project
+
+# Mac DS_Store
+.DS_Store
+
+# Eclipse prefs
+org.eclipse.jdt.core.prefs
+
+# otherstuff
+android-support-v4.jar
+proguard-project.txt
