@@ -1,29 +1,19 @@
 package etsu.edu.fishersc.budgetapp;
 
-import android.app.ListActivity;
-import android.os.Bundle;
-import android.widget.CursorAdapter;
-import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
+import android.content.Context;
+import android.view.ViewGroup;
 
+public class Menu extends ViewGroup {
 
+	public Menu(Context context) {
+		super(context);
+		// TODO Auto-generated constructor stub
+	}
 
-public class menu extends ListActivity {
-	
-	private ListView navListView;
-	 
-	
-			public void onCreate(Bundle savedInstanceState) {
-	        super.onCreate(savedInstanceState);
-	        setContentView(R.layout.menu);
-	        
-	        navListView = getListView();
-	        // navListView.setOnClickListener(viewNavListener);
-	         
-	         String[] from = new String[] {"Home", "Add Deposit"};
-	         int[] to = new int[] {R.id.text1};
-	 		CursorAdapter myAdapter = new SimpleCursorAdapter(
-	         	menu.this, R.layout.menu_listitem, null, from, to, 0);
-	         	setListAdapter(myAdapter);
-			}
+	@Override
+	protected void onLayout(boolean changed, int l, int t, int r, int b) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
