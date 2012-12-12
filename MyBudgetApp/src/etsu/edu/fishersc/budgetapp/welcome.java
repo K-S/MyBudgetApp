@@ -9,9 +9,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.Layout;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -42,6 +45,17 @@ public class welcome extends Activity
 		 this.setTheme(android.R.style.Theme_Holo_NoActionBar_Fullscreen);
         setContentView(R.layout.welcome);
         act = this;
+    	newScrollView = (ScrollView) findViewById(R.id.categoryScrollView);
+    	
+    	///
+    	///
+    	//set size of scroll view to be dynamic based on screen size so
+    	//bottom buttons are not off screen
+    	///
+    	///
+    	DisplayMetrics metrics = getResources().getDisplayMetrics();
+    	int y = metrics.heightPixels;
+    	newScrollView.getLayoutParams().height = y /3;
         
        // preferences = getSharedPreferences("BUDGET", 0);
 		//SharedPreferences.Editor editor = preferences.edit();
@@ -71,7 +85,8 @@ public class welcome extends Activity
     	
     	myLinearLayout = (LinearLayout) findViewById(R.id.LinearLayout1);
     	myScrollView = (LinearLayout) findViewById(R.id.ScrollViewLL);
-    	newScrollView = (ScrollView) findViewById(R.id.categoryScrollView);
+
+    	
     	
 
     		for(int i = 0; i < categorys.size(); i++)
