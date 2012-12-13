@@ -21,19 +21,19 @@ public class SlideMenu {
             public int icon;
             public String label;
         }
-        public SlideMenuAdapter(Activity act, SlideMenu.SlideMenuAdapter.MenuDesc[] items) {
+       /* public SlideMenuAdapter(Activity act, SlideMenu.SlideMenuAdapter.MenuDesc[] items) {
             super(act, R.id.menu_label, items);
             this.act = act;
             this.items = items;
-            }
+            }*/
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             View rowView = convertView;
             if (rowView == null) {
                 LayoutInflater inflater = act.getLayoutInflater();
-                rowView = inflater.inflate(R.layout.menu_listitem, null);
+               // rowView = inflater.inflate(R.layout.menu_listitem, null);
                 MenuItem viewHolder = new MenuItem();
-                viewHolder.label = (TextView) rowView.findViewById(R.id.menu_label);
+                //viewHolder.label = (TextView) rowView.findViewById(R.id.menu_label);
                 //viewHolder.icon = (ImageView) rowView.findViewById(R.id.menu_icon);
                 rowView.setTag(viewHolder);
             }
