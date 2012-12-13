@@ -44,7 +44,8 @@ import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
-
+@SuppressLint("SetJavaScriptEnabled")
+@TargetApi(12)
 public class MainActivity extends Activity {
 
 	private Animation animate;
