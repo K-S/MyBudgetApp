@@ -47,6 +47,12 @@ public class welcome extends Activity
         act = this;
     	newScrollView = (ScrollView) findViewById(R.id.categoryScrollView);
     	
+    	///
+    	///
+    	//set size of scroll view to be dynamic based on screen size so
+    	//bottom buttons are not off screen
+    	///
+    	///
     	DisplayMetrics metrics = getResources().getDisplayMetrics();
     	int y = metrics.heightPixels;
     	newScrollView.getLayoutParams().height = y /3;
@@ -83,7 +89,7 @@ public class welcome extends Activity
     	
     	
 
-    		for(int i = 1; i < categorys.size(); i++)
+    		for(int i = 0; i < categorys.size(); i++)
     		{
     		
     		
