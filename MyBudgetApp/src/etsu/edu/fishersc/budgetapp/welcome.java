@@ -47,15 +47,6 @@ public class welcome extends Activity
         act = this;
     	newScrollView = (ScrollView) findViewById(R.id.categoryScrollView);
     	
-    	///
-    	///
-    	//set size of scroll view to be dynamic based on screen size so
-    	//bottom buttons are not off screen
-    	///
-    	///
-    	DisplayMetrics metrics = getResources().getDisplayMetrics();
-    	int y = metrics.heightPixels;
-    	newScrollView.getLayoutParams().height = y /3;
         
        // preferences = getSharedPreferences("BUDGET", 0);
 		//SharedPreferences.Editor editor = preferences.edit();
@@ -73,7 +64,6 @@ public class welcome extends Activity
 	      inflateCategorys();
 	      
 	      	DateEditText = (EditText) findViewById(R.id.dateEditText);
-	      	PeriodEditText = (EditText) findViewById(R.id.BudgetPeriodEditText);
 	        AmountEditText = (EditText) findViewById(R.id.AmountEditText);
 	        AmountEditText.requestFocus();
 	}

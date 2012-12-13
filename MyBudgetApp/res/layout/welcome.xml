@@ -104,7 +104,7 @@
     <ScrollView
         android:id="@+id/categoryScrollView"
         android:layout_width="match_parent"
-        android:layout_height="350dip"
+        android:layout_height="248dp"
         android:fillViewport="true" >
 
         <LinearLayout
