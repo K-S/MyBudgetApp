@@ -79,7 +79,7 @@ public class welcome extends Activity
     	
     	
 
-    		for(int i = 0; i < categorys.size(); i++)
+    		for(int i = 1; i < categorys.size(); i++)
     		{
     		
     		
